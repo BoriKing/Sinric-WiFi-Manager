@@ -12,7 +12,6 @@
 
 #define DRD_TIMEOUT 1
 #define DRD_ADDRESS 0
-#define API_ENDPOINT "http://sinric.com"
 #define HEARTBEAT_INTERVAL 300000 // 5 Minutes
 
 char a_k[37];
@@ -22,8 +21,8 @@ uint64_t heartbeatTimestamp = 0;
 
 bool isConnected = false;
 bool shouldSaveConfig = false;
-boolean RelayState = 0;
-boolean SwitchReset = true;
+bool RelayState = 0;
+bool SwitchReset = true;
 
 const int TacSwitch = 10;         // GPIO pin for hardware momentary switch.
 const int PIN_LED = 2;            // Onboard LED I/O pin 2 on ESP8266 12-E Module
@@ -31,7 +30,6 @@ const int RelayPin = 5;           // GPIO pin for the Switch
 
 SimpleTimer timer;
 WebSocketsClient webSocket;
-WiFiClient client;
 Ticker flipper;
 DoubleResetDetector drd(DRD_TIMEOUT, DRD_ADDRESS);
 

@@ -34,7 +34,7 @@
 
 **_2)_** Login and create a smart home device(s).
 
-**_3)_** Download(copy) the sketch example and flash. **_(if you have previously used WiFi Manager, [reset credentials](https://github.com/BoriKing/Sinric-WiFi-Manager/blob/master/Credentials%20Reset/NetworkCredentialsReset.ino) before Flashing sketch)_**.
+**_3)_** Download(copy) the sketch example and flash. **_(if you have previously used WiFi Manager, [reset credentials](https://github.com/BoriKing/Sinric-WiFi-Manager/blob/master/Credentials%20Reset/CredentialsReset.ino) before Flashing sketch)_**.
 
 **_4)_** Copy your API Key and Device(s) ID(s).
 

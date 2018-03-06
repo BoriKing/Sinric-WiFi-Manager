@@ -9,6 +9,7 @@
 #include <DoubleResetDetector.h>  // https://github.com/datacute/DoubleResetDetector/tree/master/src
 #include <Ticker.h>               // https://github.com/esp8266/Arduino/tree/master/libraries/Ticker
 #include <SimpleTimer.h>
+#include <StreamString.h>
 
 #define DRD_TIMEOUT 1
 #define DRD_ADDRESS 0
@@ -34,6 +35,8 @@ WebSocketsClient webSocket;
 Ticker flipper;
 DoubleResetDetector drd(DRD_TIMEOUT, DRD_ADDRESS);
 
+void setPowerStateOnServer(String deviceId, String value);
+
 //callback notifying us of the need to save config
 void saveConfigCallback () {
   Serial.println("Should save config");
@@ -45,6 +48,7 @@ void turnOn(String deviceId) {
   {
     Serial.print("Switch On: ");
     digitalWrite(RelayPin, HIGH);
+    setPowerStateOnServer(f_dID, "ON");
     RelayState = 1;
     Serial.println(deviceId);
   }
@@ -59,6 +63,7 @@ void turnOff(String deviceId) {
   {
     Serial.print("Switch Off: ");
     digitalWrite(RelayPin, LOW);
+    setPowerStateOnServer(f_dID, "OFF");
     RelayState = 0;
     Serial.println(deviceId);
   }
@@ -106,6 +111,18 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
       Serial.printf("[WSc] get binary length: %u\n", length);
       break;
   }
+}
+
+void setPowerStateOnServer(String deviceId, String value) {
+  DynamicJsonBuffer jsonBuffer;
+  JsonObject& root = jsonBuffer.createObject();
+  root["deviceId"] = deviceId;
+  root["action"] = "setPowerState";
+  root["value"] = value;
+  StreamString databuf;
+  root.printTo(databuf);
+
+  webSocket.sendTXT(databuf);
 }
 
 void ButtonCheck() {

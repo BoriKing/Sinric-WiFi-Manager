@@ -9,6 +9,7 @@
 #include <DoubleResetDetector.h>  // https://github.com/datacute/DoubleResetDetector/tree/master/src
 #include <Ticker.h>               // https://github.com/esp8266/Arduino/tree/master/libraries/Ticker
 #include <SimpleTimer.h>
+#include <StreamString.h>
 
 #define DRD_TIMEOUT 1
 #define DRD_ADDRESS 0

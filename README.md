@@ -16,6 +16,11 @@
 - Single, Multi Devices and Multi Networks examples.
 - Examples with Physical ON/OFF or without.
 
+**_Examples for:_**
+- Lights
+- Switches
+- TV (**_this Example can be used for any IR device_**)
+- Thermostad
 
 **_Needed libraries:_**
 - [WebSocketsClient](https://github.com/Links2004/arduinoWebSockets/releases)
@@ -25,6 +30,7 @@
 - [DoubleResetDetector](https://github.com/datacute/DoubleResetDetector/tree/master/src) or install via Arduino library manager.
 - [Ticker](https://github.com/esp8266/Arduino/tree/master/libraries/Ticker) or install via Arduino library manager.
 - [ESP8266WebServer](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WebServer/src) or install via Arduino library manager.
+- [IRremoteESP8266](https://github.com/markszabo/IRremoteESP8266) or install via Arduino library manager. (**_This library is For TV Example only_**)
 
 
 

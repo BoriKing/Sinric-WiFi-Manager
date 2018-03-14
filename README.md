@@ -1,4 +1,4 @@
-# Sinric-WiFi-Manager for Alexa/Echo.
+# Sinric-WiFi-Manager Smart Devices(ESP-8266) for Alexa/Echo.
 
 ![gma](https://user-images.githubusercontent.com/24806817/36453051-b46efd5c-1664-11e8-8ced-872b60ffcffd.png)
 

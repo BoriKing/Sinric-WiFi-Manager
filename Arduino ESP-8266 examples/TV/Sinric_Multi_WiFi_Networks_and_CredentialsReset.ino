@@ -138,7 +138,6 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
             // Alexa, play on device
             String value = json["value"];
             irsend.sendNEC(0x20DFCC33, 32); //Play Key
-            //}
           }
           else if (action == "SelectInput") {
             // Alexa, HDMI xx on device

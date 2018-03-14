@@ -19,7 +19,8 @@
 **_Examples for:_**
 - Lights
 - Switches
-- TV (**_this Example can be used for any IR device_**)
+- RGB-LEDs
+- TV **_(this Example can be used for any IR device(s))_**
 - Thermostad
 
 **_Needed libraries:_**
@@ -30,8 +31,8 @@
 - [DoubleResetDetector](https://github.com/datacute/DoubleResetDetector/tree/master/src) or install via Arduino library manager.
 - [Ticker](https://github.com/esp8266/Arduino/tree/master/libraries/Ticker) or install via Arduino library manager.
 - [ESP8266WebServer](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WebServer/src) or install via Arduino library manager.
-- [IRremoteESP8266](https://github.com/markszabo/IRremoteESP8266) or install via Arduino library manager. (**_This library is For TV Example only_**)
-
+- [IRremoteESP8266](https://github.com/markszabo/IRremoteESP8266) or install via Arduino library manager. **_(For TV Example only)_**
+- [FastLED](https://github.com/FastLED/FastLED) **_(For RGB-LEDs Example only)_**
 
 
 **_How to use:_**

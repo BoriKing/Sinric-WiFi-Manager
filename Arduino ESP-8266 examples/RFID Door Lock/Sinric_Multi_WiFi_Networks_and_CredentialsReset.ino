@@ -8,7 +8,7 @@
 #include "WiFiManager.h"          // https://github.com/the-real-orca/WiFiManager
 #include <DoubleResetDetector.h>  // https://github.com/datacute/DoubleResetDetector/tree/master/src
 #include <SPI.h>
-#include <MFRC522.h>
+#include <MFRC522.h>              // https://github.com/miguelbalboa/rfid
 #include <Ticker.h>               // https://github.com/esp8266/Arduino/tree/master/libraries/Ticker
 #define FASTLED_ESP8266_RAW_PIN_ORDER
 #include <FastLED.h>              // https://github.com/FastLED/FastLED

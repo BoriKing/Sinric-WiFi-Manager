@@ -22,6 +22,7 @@
 - RGB-LEDs
 - TV **_(this Example can be used for any IR device(s))_**
 - Thermostad
+- RFID Door Lock
 
 **_Needed libraries:_**
 - [WebSocketsClient](https://github.com/Links2004/arduinoWebSockets/releases)
@@ -32,7 +33,8 @@
 - [Ticker](https://github.com/esp8266/Arduino/tree/master/libraries/Ticker) or install via Arduino library manager.
 - [ESP8266WebServer](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WebServer/src) or install via Arduino library manager.
 - [IRremoteESP8266](https://github.com/markszabo/IRremoteESP8266) or install via Arduino library manager. **_(For TV Example only)_**
-- [FastLED](https://github.com/FastLED/FastLED) **_(For RGB-LEDs Example only)_**
+- [FastLED](https://github.com/FastLED/FastLED) **_(For RGB-LEDs and RFID Door Lock Example only)_**
+- [MFRC522](https://github.com/miguelbalboa/rfid) **_(For RFID Door Lock Example only)_**
 
 
 **_How to use:_**
@@ -55,7 +57,5 @@
 
 **_9)_** Enjoy!
 
-#### Donate to [me](https://www.paypal.com/paypalme/BorikingPR) for making your life easier and your device smarter. 
-#### Buy [kakopappa](https://paypal.me/arunat) a beer.
 
 ### This project is based on [kakopappa's](https://github.com/kakopappa/sinric) repo.
